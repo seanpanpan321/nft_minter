@@ -15,7 +15,7 @@ import {
   FormHelperText,
 } from '@chakra-ui/react';
 import { FC, useState, ChangeEvent } from 'react';
-import { toMetaplexFileFromBrowser, UploadMetadataOutput } from '@metaplex-foundation/js';
+import { UploadMetadataOutput } from '@metaplex-foundation/js';
 
 import { Metaplex, bundlrStorage, walletAdapterIdentity } from '@metaplex-foundation/js';
 import { useWallet } from '@solana/wallet-adapter-react';
@@ -100,16 +100,6 @@ const NFTMinter: FC = () => {
       .catch((e) => {
         console.log(e);
       });
-
-    // const { uri } = await metaplex
-    //   .nfts()
-    //   .uploadMetadata({
-    //     name,
-    //     description,
-    //     image: await toMetaplexFileFromBrowser(file[0]),
-    //     symbol: 'M-NFT',
-    //   })
-    //   .run();
 
     if (!uri) {
       SetStatus('');
