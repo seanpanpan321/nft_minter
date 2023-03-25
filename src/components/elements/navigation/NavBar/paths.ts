@@ -3,29 +3,7 @@ import { ISubNav } from '../SubNav/SubNav';
 const NAV_LINKS: ISubNav[] = [
   { label: 'Home', href: '/' },
   {
-    label: 'Transactions',
-    href: '/transactions',
-  },
-  {
-    label: 'Transfers',
-    href: '/transfers',
-    children: [
-      {
-        label: 'SPL',
-        subLabel: 'Get your SPL transfers',
-        href: '/transfers/spl',
-        logo: 'token',
-      },
-      {
-        label: 'NFT',
-        subLabel: 'Get your NFT transfers',
-        href: '/transfers/nft',
-        logo: 'lazyNft',
-      },
-    ],
-  },
-  {
-    label: 'Balances',
+    label: 'Receipts',
     href: '/balances',
     children: [
       {
@@ -43,7 +21,7 @@ const NAV_LINKS: ISubNav[] = [
     ],
   },
   {
-    label: 'NFT Minter',
+    label: 'Shopping Cart',
     href: '/nftMinter',
   },
 ];

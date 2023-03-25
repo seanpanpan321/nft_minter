@@ -8,7 +8,7 @@ const SolNFTBalances: FC<ISolNFTBalances> = ({ balances }) => {
   return (
     <>
       <Heading size="lg" marginBottom={6}>
-        NFT Balances
+      Your receipts
       </Heading>
       {balances?.length ? (
         <Grid templateColumns="repeat(auto-fit, minmax(280px, 1fr))" gap={6}>

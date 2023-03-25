@@ -123,6 +123,7 @@ const NFTMinter: FC = () => {
       .run()
       .catch((e) => {
         SetStatus('');
+        console.log(e);
         throw toast({
           title: 'Mint Failed',
           description: `Error: ${e.message}`,
@@ -146,7 +147,7 @@ const NFTMinter: FC = () => {
   return (
     <>
       <Heading size="lg" marginBottom={6}>
-        Solana NFT Minter
+        Ready for checkout?
       </Heading>
       <FormControl>
         <SimpleGrid
@@ -170,15 +171,15 @@ const NFTMinter: FC = () => {
           </Flex>
           <Flex direction={'column'} alignItems={'stretch'} justifyContent={'space-around'}>
             <Box>
-              <FormLabel>NFT Name</FormLabel>
+              <FormLabel>Where did you order?</FormLabel>
               <Input placeholder="NFT Name" onChange={handleInput} />
             </Box>
             <Box>
-              <FormLabel>NFT Description</FormLabel>
+              <FormLabel>What did you order?</FormLabel>
               <Textarea placeholder="NFT Description" onChange={handleDescription} />
             </Box>
             <Box>
-              <FormLabel>Select NFT Image</FormLabel>
+              <FormLabel>Here is your receipt</FormLabel>
               <Input placeholder="NFT" type={'file'} onChange={handleFile} />
             </Box>
             <Button
@@ -191,7 +192,7 @@ const NFTMinter: FC = () => {
                 });
               }}
             >
-              Mint
+              Checkout & Pay
             </Button>
             <FormHelperText>{status && status}</FormHelperText>
           </Flex>
