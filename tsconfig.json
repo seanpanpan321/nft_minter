@@ -16,6 +16,6 @@
     "incremental": true,
     "baseUrl": "./src"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/About.js", "src/components/templates/home/demo.js", "src/components/elements/FoodList/FoodList.jsx", "src/components/elements/FoodList/Counter.jsx", "src/components/elements/FoodList/FoodList.jsx", "src/components/elements/FoodList/Counters.jsx", "src/components/elements/FoodList/Counter.jsx", "src/components/elements/FoodList/FoodList.js", "src/components/elements/FoodList/Counters.jsx", "src/components/elements/FoodList/Counter.jsx"],
   "exclude": ["node_modules"]
 }

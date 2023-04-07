@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';
 import { SessionProvider } from 'next-auth/react';

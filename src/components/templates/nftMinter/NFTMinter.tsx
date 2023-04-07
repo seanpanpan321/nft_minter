@@ -21,6 +21,7 @@ import { Metaplex, bundlrStorage, walletAdapterIdentity } from '@metaplex-founda
 import { useWallet } from '@solana/wallet-adapter-react';
 import { Connection, clusterApiUrl } from '@solana/web3.js';
 import apiPost from 'utils/apiPost';
+import ReceiptGenerator from 'components/elements/FoodList/shoppingCart';
 
 const NFTMinter: FC = () => {
   const BgColor = useColorModeValue('gray.100', 'gray.600');
@@ -182,6 +183,7 @@ const NFTMinter: FC = () => {
               <FormLabel>Here is your receipt</FormLabel>
               <Input placeholder="NFT" type={'file'} onChange={handleFile} />
             </Box>
+            {/* <ReceiptGenerator restaurantName={restaurantName} orderItems = {orderItems} total = {0}></ReceiptGenerator> */}
             <Button
               mt={4}
               colorScheme="teal"

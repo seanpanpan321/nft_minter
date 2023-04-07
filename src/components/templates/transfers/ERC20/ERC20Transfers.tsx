@@ -62,7 +62,7 @@ const ERC20Transfers: FC<IERC20Transfers> = ({ transfers }) => {
           </TableContainer>
         </Box>
       ) : (
-        <Box>Looks Like you do not have any ERC20 Transfers</Box>
+        <Box>eklwfnlkn</Box>
       )}
     </>
   );
